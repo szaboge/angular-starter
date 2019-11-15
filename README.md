@@ -1,27 +1,58 @@
-# Starter
+##### NPM telepítése
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+###### macOS
 
-## Development server
+`brew install node`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+###### Linux
 
-## Code scaffolding
+`sudo apt install nodejs`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##### Node frissítése
 
-## Build
+`brew upgrade node`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+##### Angular CLI telepítése
 
-## Running unit tests
+`npm install -g @angular/cli@latest`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+##### Új Angular project generálása
 
-## Running end-to-end tests
+`ng new <project neve>`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+###### További paraméterek
 
-## Further help
+https://angular.io/cli/new
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##### A project futtatása
+
+`ng serve`
+
+##### Komponens generálása
+
+`ng generate component <komponens neve>`
+
+##### Service generálása
+
+`ng generate service <service neve>`
+
+##### Angular Material hozzáadása
+
+`ng add @angular/material`
+
+- String binding {{}}
+- Input @Input()
+- Output @Output() output = new EventEmitter<tipus>()
+- Bemenet kiíratása
+- Gomb click
+- *ngIf, else
+- ngSwitch
+- ngClass
+- pipes
+- Service generálás
+- Interface létrehozása
+- Subject
+- Feliratkozás
+- ngOnInit
+- ngOnDestroy
+- dependecy injection

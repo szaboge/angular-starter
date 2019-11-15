@@ -1,0 +1,25 @@
+<div class="container">
+  {{valtozo | uppercase}}
+  {{bemenet}}
+  <button (click)="onClick()">Nyomj meg!</button>
+  <span *ngIf="bemenet === '3'; else nemHarmas">
+    Hármas vagyok!
+  </span>
+  <ng-template #nemHarmas>
+    Nem hármas vagyok!
+  </ng-template>
+
+  <ng-container [ngSwitch]="bemenet">
+    <span *ngSwitchCase="'1'" class="highlight">1</span>
+    <span *ngSwitchCase="'2'">2</span>
+    <span *ngSwitchDefault>Nem egy és nem kettő</span>
+  </ng-container>
+
+  <span [ngClass]="{border: bemenet === '3'}">
+    Nekem csak a 3-asnál van keretem!
+  </span>
+
+  <span>
+    {{bemenet | uppercase}}
+  </span>
+</div>
